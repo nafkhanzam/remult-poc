@@ -80,9 +80,4 @@ export class User {
         },
       ]);
   }
-
-  @BackendMethod({ allowed: true, transactional: false })
-  static async thisBackendMethodFails() {
-    return { success: true };
-  }
 }
