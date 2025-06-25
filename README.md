@@ -1,3 +1,8 @@
+# Creating from template:
+
+1. `pnpm create remult@latest`
+2. Pick SvelteKit
+
 # Failing Backend Methods
 
 1. `pnpm install`
