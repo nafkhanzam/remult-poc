@@ -4,7 +4,9 @@
   import Admin from "../demo/Admin.svelte";
   import Todo from "../demo/todo/Todo.svelte";
   import "../styles.css";
+  import { Backend } from "../shared/backend";
 </script>
+
 <div class="tiles">
   <Tile
     title="remult-poc"
@@ -38,6 +40,15 @@
       <div class="intro__stack-item">
         <span>Auth</span>
         auth.js
+      </div>
+      <div class="intro__stack-item">
+        <span>Backend</span>
+        <button
+          onclick={async () => {
+            const result = await Backend.thisBackendMethodFails({});
+            alert(JSON.stringify(result, null, 2));
+          }}>look</button
+        >
       </div>
     </div>
   </Tile>
