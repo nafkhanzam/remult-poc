@@ -7,7 +7,7 @@ import {
   Validators,
 } from "remult";
 
-import type { ProviderType } from "../../server/auth";
+import type { ProviderType } from "../../shared/auth";
 import { Roles } from "./Roles";
 import bcrypt from "bcryptjs";
 
